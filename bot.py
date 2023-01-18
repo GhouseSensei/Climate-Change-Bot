@@ -1,6 +1,6 @@
 import telebot
 import time
-import weatherr
+import weather
 import airQ
 import co2emiss
 
