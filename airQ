@@ -1,0 +1,14 @@
+import ozon3 as ooo
+
+def aqii(city):
+    o3 = ooo.Ozon3('YOUR API KEY')
+    try:
+        data = o3.get_city_air(city)
+    except Exception as e:
+        print(e)
+        return []
+    dicc = data.to_dict()
+    print(str(dicc["aqi"][0]))
+    print(str(data["AQI_meaning"][0]))
+    print(str(data["AQI_health_implications"][0]))
+    return([str(dicc["aqi"][0]), str(data["AQI_meaning"][0]), str(data["AQI_health_implications"][0])])
