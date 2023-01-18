@@ -21,7 +21,7 @@ def start(message):
 
 @bot.message_handler(commands=['help'])
 def help(message):
-    bot.reply_to(message, "/help - this message\n/weather_report <City name> - Gives weather details and AQI of given city\n/meat_emission <chicken/mutton/beef/pork> - Calculates amount of co2 emitted based on quatity you consumed\n/lpg_emission - Calculates amount of co2 emitted(approx) based on quatity you used\n/car_emission - Calculates the amount of co2 you emitted based on the distance you travelled\n/bike_emission - Calculates the amount of co2 you emitted based on the distance you travelled\n\nNote: All the calculated values are approximate values, they may be close but not exact")
+    bot.reply_to(message, "/help - this message\n/weather_report <City name> - Gives weather details and AQI of given city\n/meat_emission <chicken/mutton/beef/pork> - Calculates amount of co2 emitted based on quatity you consumed\n/lpg_emission - Calculates amount of co2 emitted(approx) based on quatity you used\n/car_emission - Calculates the amount of co2 you emitted based on the distance you travelled\n/bike_emission - Calculates the amount of co2 you emitted based on the distance you travelled\n/flight_emission - Calculates amount of CO2 emitted per person traveling in a flight depending on departure and destination locations.\n\nNote: All the calculated values are approximate values, they may be close but not exact")
 
 @bot.message_handler(commands = ['weather_report'])
 def weather_report(message):
