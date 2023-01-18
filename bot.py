@@ -86,7 +86,7 @@ def lpgg(message):
 
 @bot.message_handler(commands=["car_emission"])
 def car(message):
-    msg = bot.reply_to(message, "Enter the fuel of your vehicle")
+    msg = bot.reply_to(message, "Enter the fuel of your vehicle(petrol/diesel)")
     bot.register_next_step_handler(msg, fuel)
 def fuel(message):
     if(message.text.lower() == "petrol"):
