@@ -26,7 +26,7 @@ def help(message):
 @bot.message_handler(commands = ['weather_report'])
 def weather_report(message):
     txt = message.text
-    mess = weatherr.climet(extract_arg(txt))
+    mess = weather.climet(extract_arg(txt))
     if(len(mess) == 1):
         bot.reply_to(message, mess[0]);
     else:
